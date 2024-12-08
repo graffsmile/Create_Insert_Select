@@ -57,9 +57,12 @@ values('Time', 424, 1),
 
 update track
 set name = 'Первый мой поход',
-	track_duration = 200
+	track_duration = 210
 where id = 6;
 
+update track 
+set "name" = 'Hey you, take myself'
+where id = 7;
 
 insert into collection (title, release_date)
 values('Лучшие блюзы и баллады', '1998-01-01'),
