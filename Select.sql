@@ -17,7 +17,7 @@ select genreid, count(*) from artist_genre
 group by genreid
 order by genreid asc;
 
-select count(t.name) from album a 
+select count(t) from album a 
 join track t on a.id = t.albumid
 where a.release_date between '2019-01-01' and '2020-12-31';
 
